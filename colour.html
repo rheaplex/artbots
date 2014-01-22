@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aesthetics Max</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/rita.js"></script>
+    <script type="text/javascript">
+      var grammar_spec;
+      // loadFromFile doesn't seem to be happy with local files for testing
+      $.ajax({
+          'async': false,
+          'global': false,
+          'url': "grammars/colour-grammar.json",
+          'dataType': "json",
+          'success': function (data) {
+              grammar_spec = data;
+          }
+      });
+      
+      var grammar = new RiGrammar(grammar_spec);
+      for (var i = 0; i < 100; i++) {
+          var output = grammar.expand();
+          document.write('<p>' + output + '</p>');
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aesthetics Max</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/rita.js"></script>
+  </head>
+  <body>
+    <script>
+      var singular = function (string) {
+          return string.replace(/\ba(\s+[aeiou])/g, "an$1");
+      };
+
+      var grammar_spec;
+      // loadFromFile doesn't seem to be happy with local files for testing
+      $.ajax({
+          'async': false,
+          'global': false,
+          'url': "grammars/aesthetic.json",
+          'dataType': "json",
+          'success': function (data) {
+              grammar_spec = data;
+          }
+      });
+      
+      var grammar = new RiGrammar(grammar_spec);
+      for (var i = 0; i < 10; i++) {
+          var output = grammar.expand();
+          $('body').append('<p>' + singular(output) + '</p>');
+      }				      
+    </script>
+  </body>
+</html>

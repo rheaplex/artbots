@@ -1,0 +1,11 @@
+{
+    "<scale>" : "massive | large | small | tiny | fat | narrow | slim | thin | wide | shallow | deep | tall | short | low | stretched",
+    "<style>" : "abstract | art deco | art brut | art nouveau | biomechanical | classical | conceptual | cuboidal | cubist | curvilinear | cybernetic | devotional | erotic | expressionist | freeform | futuristic | gothic | grunge | iconic | impressionist | international style | kitsch | mechanistic | mechanical | minimalist | neo-geo | neoclassical | neoconceptual | new media | organic | pop-art | post-atomic | post-impressionist | postmodern | readymade | rectilinear | renaissance | retro-futuristic | robotic | romanesque | romantic | socialist realist | spiky | streamlined | surreal | symbolist | vernacular",
+    "<quality>" : "blurry | bumpy | cracked | crosshatched | fibrous | fluorescent | fractal | furry | glazed | glassy | halftoned | iridescent | jagged | lumpy | metallic | pixellated | ragged | rough | scumbled | sketchy | smeary | smoky | smooth | torn | transparent | vague | wooden | wobbly",
+    "<feel>" : "angry | alienating | amusing | anxious | brave | calm | carefree | cold | compassionate | dejected | depressing | desirous | disgusting | exciting | expectant | fearful | grieving | happy | harsh | hopeful | joyful | loving | lustful | melancholy | nostalgic | painful | pleasurable | proud | sentimental | shocking | surprising | sympathetic tender warm",
+    "<medium>" : "assemblage | chocolate | canvas | cardboard | carved | ceramic | clay | collage | crackle glazed | fabric | fat | felt | foam rubber | glass | glazed | hessian | holographic | ice | impasto | marble | modelling clay | neon | painted | paper | polished steel | polychrome steel | plastic | relief | spraycan stencil | textile  | wax | wicker | wire | wireframe | welded steel | wooden | woven",
+    "<shape>" : "anthropomorphic | architectural | blobby | blocky | conical | crazy | cuboidal | cylindrical | fractal | geometrical | gnarled | organic | ovoidal | flat | rectilinear | toroidal | tubular | streamlined | triangular | zoomorphic",
+    "<thing>" : "arrangement | composition | configuration | construction | figure | form | outline | pattern | shape | structure",
+    "<form>": "<scale> <quality> <style> <feel> <medium> <shape> <thing>",
+    "<start>" : "<form>"
+}

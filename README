@@ -1,0 +1,9 @@
+
+
+* Grammar Implementation Notes
+
+The grammars have been ported from the Python version of the Lisp originals.
+
+Optional elements have been implemented using <optional-*> rules, which expand to <nothing> if they should not return anything. <nothing> expands to "".
+
+This is more verbose than allowing inline probabilities would be, but works well with the RiTa Grammar system.
